@@ -6,7 +6,7 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
-        //Create a log array to hold various log objects
+        // The array demonstrates different logs from user and implement the different functionalities.
         Log[] newLogArr = new Log[4];
         newLogArr[0] = new TextLog("TextLogFile", "Log stored as text", new Date(), "text", 45);
         newLogArr[1] = new PhotoLog("PhotoLogFile", "Log Images saved", new Date(), ".jpg", 855);

@@ -54,7 +54,7 @@ public class AudioLog extends Log implements LogInterface {
 
     @Override
     public void triggerAction() {
-        System.out.println("The Audio is transcoded and close-captioned");
+        System.out.println("The Audio is transcoded ");
 
     }
 
