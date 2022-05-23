@@ -13,14 +13,14 @@ public class TextLog extends Log implements LogInterface{
         this.size = size;
     }
 
-    public boolean validateType() {
+    public boolean typeValidation() {
         if(type!=null && type.equalsIgnoreCase("text"))
             return true;
         return false;
     }
 
     @Override
-    public boolean validateSize() {
+    public boolean sizeValidation() {
         if(size>0 && size<99999)
             return true;
         return false;

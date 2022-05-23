@@ -14,14 +14,14 @@ public class VideoLog extends Log implements LogInterface  {
     }
 
     @Override
-    public boolean validateType() {
+    public boolean typeValidation() {
         if(type!=null && (type.equalsIgnoreCase(".mp4")||type.equalsIgnoreCase(".wmv")))
             return true;
         return false;
     }
 
     @Override
-    public boolean validateSize() {
+    public boolean sizeValidation() {
         if(size>0 && size<999)
             return true;
         return false;

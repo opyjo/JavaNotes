@@ -2,6 +2,6 @@ package com.algonquin.loggy;
 
 public interface LogInterface {
 
-    public boolean validateType();
-    public boolean validateSize();
+    public boolean typeValidation();
+    public boolean sizeValidation();
 }

@@ -14,14 +14,14 @@ public class PhotoLog extends Log implements LogInterface{
     }
 
     @Override
-    public boolean validateType() {
+    public boolean typeValidation() {
         if(type!=null && (type.equalsIgnoreCase("jpeg")||type.equalsIgnoreCase("png")))
             return true;
         return false;
     }
 
     @Override
-    public boolean validateSize() {
+    public boolean sizeValidation() {
         if(size>0 && size<499)
             return true;
         return false;

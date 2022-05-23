@@ -14,14 +14,14 @@ public class AudioLog extends Log implements LogInterface {
     }
 
     @Override
-    public boolean validateType() {
+    public boolean typeValidation() {
         if (type != null && (type.equalsIgnoreCase(".mp3") || type.equalsIgnoreCase(".mp4")))
             return true;
         return false;
     }
 
     @Override
-    public boolean validateSize() {
+    public boolean sizeValidation() {
         if (size > 0 && size < 199)
             return true;
         return false;
